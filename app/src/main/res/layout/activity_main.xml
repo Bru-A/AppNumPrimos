@@ -2,55 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="#E5E5E5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27374D"
+    android:foregroundTint="#040D12"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:text="Números Primos" />
-
-    <EditText
-        android:id="@+id/editTextQntPrimos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Digite a quantidade de números primos"
-        android:inputType="text" />
-
-    <Button
-        android:id="@+id/buttonCalcular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp">
-
-        <RadioButton
-            android:id="@+id/radioButtonAsc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ascendente" />
-
-        <RadioButton
-            android:id="@+id/radioButtonDesc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Descendente" />
-
-    </RadioGroup>
+        android:layout_width="312dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/delius_swash_caps"
+        android:text="Números Primos"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#DCE5EC"
+        android:textSize="34sp" />
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="312dp"
+        android:layout_height="232dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp"
+        android:animateLayoutChanges="true"
+        android:background="#9CB1BE"
+        android:backgroundTint="#526D81"
+        android:cacheColorHint="#DCE5EC"
+        android:foregroundTint="#ED3737"
+        android:foregroundTintMode="add"
+        android:keepScreenOn="false"
+        android:layerType="software"
+        android:smoothScrollbar="true"
+        android:textDirection="firstStrongLtr"
+        android:textFilterEnabled="false" />
+
+    <EditText
+        android:id="@+id/editTextQntPrimos"
+        android:layout_width="299dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Digite a quantidade de números primos"
+        android:inputType="text"
+        android:textColor="#9CB1BE"
+        android:textColorHint="#9CB1BE"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Mostrar primos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHighlight="#9CB1BE"
+        android:textColorLink="#526D81" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center">
+
+        <RadioButton
+            android:id="@+id/radioButtonDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:text="Descendente"
+            android:textAlignment="center"
+            android:textColor="#DCE5EC" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="79dp"
+            android:text="Ascendente"
+            android:textAlignment="center"
+            android:textColor="#DCE5EC" />
+    </LinearLayout>
 
 </LinearLayout>
